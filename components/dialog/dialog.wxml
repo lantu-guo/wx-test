@@ -1,0 +1,9 @@
+<!--components/dialog/dialog.wxml-->
+<!-- <text>components/dialog/dialog.wxml</text> -->
+<view class="dialog_box">
+  <view class="mask" catchtap="hide"></view>
+  <view class="content_box">
+  <!-- 插槽 -->
+  <slot/>
+  </view>
+</view>

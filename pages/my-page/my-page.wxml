@@ -1,0 +1,7 @@
+<!--pages/my-page/my-page.wxml-->
+<view class="my-page">
+  <text>{{text}}</text>
+  <view hidden="{{flag?true:false}}">
+    <text data-forName='公众号：编程坑太多' data-forUser='开发人员' data-forDate='201800805' bindtap='clickMe'>点我点我我给console显示</text>
+  </view>
+</view>

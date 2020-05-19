@@ -1,0 +1,64 @@
+<!--pages/class/class.wxml-->
+<!-- <text>pages/class/class.wxml</text> -->
+<view class="claa_box">
+	<view class="h1">课程列表</view>
+	<view class="list_one">
+		<view class="h3">零基础列表</view>
+		<block wx:for="{{level1}}" wx:key="index">
+			<view class="item">
+				<view class="img_box">
+					<image src="{{item.img}}"></image>
+				</view>
+				<view class="content_box">
+					<view class="title">{{item.title}}</view>
+					<view class="desc">这是一个描述{{item.title}}</view>
+					<view class="bottom_box">
+						<view>初级</view>
+						<view>{{item.count}}份</view>
+						<view>￥：{{item.price}}</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+
+	<view class="list_one">
+		<view class="h3">工程化课程</view>
+		<block wx:for="{{level2}}" wx:key="index">
+			<view class="item">
+				<view class="img_box">
+					<image src="{{item.img}}"></image>
+				</view>
+				<view class="content_box">
+					<view class="title">{{item.title}}</view>
+					<view class="desc">这是一个描述{{item.title}}</view>
+					<view class="bottom_box">
+						<view>中级</view>
+						<view>{{item.count}}份</view>
+						<view>￥：{{item.price}}</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+
+	<view class="list_one">
+		<view class="h3">架构课列表</view>
+		<block wx:for="{{level3}}" wx:key="index">
+			<view class="item">
+				<view class="img_box">
+					<image src="{{item.img}}"></image>
+				</view>
+				<view class="content_box">
+					<view class="title">{{item.title}}</view>
+					<view class="desc">这是一个描述{{item.title}}</view>
+					<view class="bottom_box">
+						<view>高级</view>
+						<view>{{item.count}}份</view>
+						<view>￥：{{item.price}}</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>
